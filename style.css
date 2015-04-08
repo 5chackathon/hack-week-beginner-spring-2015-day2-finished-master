@@ -1,0 +1,73 @@
+/* This is a CSS document! It styles our HTML page */
+/* 
+	This is a selector. Like the name, it "selects" a part of 
+	our HTML page and styles it. We can use HTML tags as selectors,
+	e.g., <body> -> body{}, <p> -> p{}
+*/
+
+body {
+    margin: 5% 10%;
+    color: #214F7A;
+    font-family: 'Helvetica', sans-serif;
+}
+/*
+	Pseudoclasses, of the form :pseudo-class, are used to define
+	special states of certain elements
+*/
+
+a,
+a:visited,
+a:active {
+    color: #A7B8C7;
+}
+a:hover {
+    color: #9CACBA;
+}
+h3 {
+    margin-top: 0;
+}
+/*
+ 	An id selector is specified by #nameofid. Here we also see
+ 	a more specific selector as we are targeting the images inside
+ 	#hobbies and none else.
+
+ 	Key idea: styling priority is given to more specific selectors!	
+*/
+
+#hobbies img {
+    width: 32%;
+    height: 200px;
+}
+/*
+	We can select multiple elements by adding a comma in between.
+*/
+
+ol,
+ol li {
+    padding-left: 6%;
+}
+ul,
+ul li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline;
+}
+#contact-info li {
+    padding-right: 2%;
+    margin-right: 2%;
+    border-right: 1px solid #214F7A;
+}
+/*
+ 	A class selector is specified by .nameofclass.
+*/
+
+.block {
+    width: 50%;
+}
+#left {
+    float: left;
+}
+#right {
+    float: right;
+}

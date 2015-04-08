@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!-- A comment! -->
+
+<!-- Some references:
+	CSS cheatsheet: http://www.lesliefranke.com/files/reference/csscheatsheet.html
+	CSS cheatsheet (with box model): http://www.hippyusa.org/memanage/pdf/css-cheatsheet-portrait.pdf
+	HTML reference: http://www.w3schools.com/tags/
+	HTML validator: http://validator.w3.org/
+-->
+
+<html>
+<!-- Head contains important information about this document -->
+
+<head>
+
+  <!-- Your website title. Look at the tab on your browser! -->
+  <title>About Me</title>
+
+  <!-- This tells this HTML document where to look for styling, in this case, style.css -->
+  <!-- Notice also how this tag is self-closing. Most tags aren't. -->
+  <link type="text/css" rel="stylesheet" href="style.css"/>
+  <script type="text/javascript" src="http://code.jquery.com/jquery.js"></script>
+
+  <!-- uncomment this to run the practice code for javascript -->
+  <!-- <script src="script.js"></script> -->
+
+
+</head>
+
+<!-- The body contains everything that will be visible on our page. -->
+
+<body>
+
+  <!-- Our most important heading. This should be used for your website title. -->
+  <h1>About Me</h1>
+
+  <!-- Paragraph tags are for just that: paragraphs -->
+  <p>Hi! My name is <b>Lucas Dos Santos</b> and I'm a computer science major at
+    <a href="http://www.cs.pomona.edu">Pomona College.</a></p>
+
+
+  <hr />
+
+  <!-- Here we have a lower-level heading. -->
+  <h2>My Hobbies</h2>
+  <!-- Divs (divisions) are a great way to section off our page, especially to target specific
+		sections we want style -->
+  <!-- id's are used to style one-off sections -->
+  <div id="hobbies">
+    <!-- The <img> tag is used to display images. Like the <a> tag, it has an attribute,
+			src, that tells us where to find the image! The alt tag is used for a short description. -->
+	<!-- Image credi: http://sourceenterprises.com/services/photography -_>
+    <img src="photography.jpg" alt="Photography" />
+
+    <!-- We can also include online images by simply linking them in the src -->
+    <!-- We also see a little bit of inline (meaning within the HTML document) styling by specifying the height -->
+    <img src="http://www.theatoz.org/wp-content/uploads/2013/12/travel.jpg" alt="Travelling" height="200" />
+
+
+    <!-- We can even include gifs! -->
+    <img src="https://postmediacanadadotcom.files.wordpress.com/2013/06/sleepypuppy.gif" alt="Sleeping" height="200" />
+  </div>
+
+
+
+  <h2>My Favorites</h2>
+  <!-- Classes, unlike id's, can be used to target many sections -->
+  <div class="block" id="left">
+    <h3>Foods</h3>
+    <!-- This is an ordered list (i.e., numbering) -->
+    <ol>
+      <!-- A list is made of list items, represented by <li> tags. -->
+      <li>Steak</li>
+      <li>Pizza</li>
+      <li>Bread</li>
+    </ol>
+  </div>
+  <div class="block" id="right">
+    <h3>Movies</h3>
+    <ol>
+      <li>Whiplash</li>
+      <li>The Imitation Game</li>
+      <li>The Perks of Being a Wallflower</li>
+    </ol>
+  </div>
+
+  <hr />
+
+  <h2>Contact Me</h2>
+
+  <div id="contact-info">
+    <!-- This is an unordered list (as opposed to ol (an ordered list) with numbers). -->
+    <ul>
+
+      <li>Email:
+
+        <!-- The <a> tag is used to create a link. -->
+        <!-- The href attribute tells the browser what webpgae to go to. -->
+        <a href="mailto:me@example.com">me@example.com</a>
+      </li>
+      <li>Website:
+        <a href="http://www.pomona.edu">pomona.edu</a>
+      </li>
+    </ul>
+  </div>
+
+<!-- javascript code that uses the jquery library should be added at the end of the body -->
+<script src="jquery_script.js"></script>
+</body>
+
+</html>
+<!-- Remember to close every tag! Balance is key. -->
